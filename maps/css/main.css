@@ -1,0 +1,25 @@
+html, body { height: 100%; margin: 0px; padding: 0px;}
+#frame   { background:pink }
+#panel   { background:orange; width:200px; height: 100%;float:left; margin: 0; padding: 0; }
+#content { background:white; height: 100%; display:inline-block; margin: 0; padding: 0;}
+
+#gmap{
+    position:absolute;
+    left:200px;
+    right: 0px;
+    height: 100%;
+}
+
+.container{
+    background:white;
+    width: auto;
+    height: auto;
+
+    margin: 0px; padding: 0px;
+}
+
+.overlap{
+    position:absolute;
+    top: 90%;
+    left:80%;
+}

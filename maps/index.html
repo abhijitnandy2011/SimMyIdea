@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/label.js"></script> -->
+    <body>
+        <div id='panel'>
+        Side panel, fixed width.
+        </div>
+        <div id='content'>
+            <div id="gmap"></div>
+            <div class="overlap" id="simcontrols">
+                <button type="button" onClick="addMarker()">Add Node</button>
+            </div>
+            <div id="nodeinfo">
+            <form>
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+                <button type="button" onClick="addMarker()">nodeinfo</button>
+            </div>
+        </div>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYINOmSU2JiXHYtmjlBguvGR7u3KrPR0M&region=IN&callback=initMap">
+        </script>
+    </body>
+</html>
