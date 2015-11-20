@@ -1,0 +1,27 @@
+#:import RootWidget ui.RootWidget
+
+RootWidget:
+    canvas.before:
+        Color:
+            rgba: 0.1, 0.1, 0.1, 1
+        Rectangle:
+            # self here refers to the widget i.e FloatLayout
+            pos: self.pos
+            size: self.size
+    Button:
+        id: btnSimStart
+        text: 'Start Sim'
+        size_hint: None, None
+        pos_hint: {'x': 0.65, 'y': .05}
+        width: 100
+        height: 20
+        on_press: root.printHello("hello")
+    Button:
+        id: btnSimStop
+        text: 'Stop Sim'
+        size_hint: None, None
+        pos_hint: {'x': 0.80, 'y': .05}
+        width: 100
+        height: 20
+        on_press: root.printHello("hello")
+

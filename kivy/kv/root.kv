@@ -1,0 +1,39 @@
+#:kivy 1.4
+
+FloatLayout:
+    size: 1, 1
+    BoxLayout:
+        pos_hint: {'x':.2, 'y':.2}
+        size_hint: 0.25, 0.25
+        orientation: 'horizontal'
+        padding: 5
+        spacing: 2
+        StackLayout:
+            orientation: 'lr-tb'
+            size_hint: 0.15, 1
+            Button:
+                text: "I1"
+                size_hint: 1, 0.1
+            Button:
+                text: "I2"
+                size_hint: 1, 0.05
+            Button:
+                text: "I3"
+                size_hint: 1, 0.05
+        BoxLayout:
+            orientation: 'vertical'
+            TextInput:
+                text: "Lua Code"
+                size_hint: 1, 1
+        StackLayout:
+            orientation: 'lr-tb'
+            size_hint: 0.15, 1
+            Button:
+                text: "O1"
+                size_hint: 1, 0.05
+            Button:
+                text: "O2"
+                size_hint: 1, 0.05
+            Button:
+                text: "O3"
+                size_hint: 1, 0.05

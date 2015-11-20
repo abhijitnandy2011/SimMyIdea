@@ -1,0 +1,52 @@
+{
+    "Sim": {
+        "Factory": {
+            "InBank": {
+                "WaterIn": {
+                    "ref": "WaterPump.WaterOut"
+                }
+            }
+        },
+        "WaterPump": {
+            "InBank": {
+                "ref": "None"
+            },
+            "OutBank": {
+                "WaterOut": {
+                    "curves": {
+                        "real": [
+                            {
+                                "end": 10,
+                                "left": 0,
+                                "right": 100,
+                                "start": 0,
+                                "type": "lin"
+                            },
+                            {
+                                "end": 22,
+                                "start": 10,
+                                "type": "const",
+                                "value": 100
+                            }
+                        ],
+                        "speculation": [
+                            {
+                                "end": 22,
+                                "start": 10,
+                                "type": "const",
+                                "value": 100
+                            }
+                        ]
+                    },
+                    "type": 3,
+                    "unit": [
+                        "litre"
+                    ]
+                }
+            },
+            "properties": {},
+            "script": {},
+            "type": 1
+        }
+    }
+}
